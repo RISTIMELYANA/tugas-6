@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title> project membuat switch case</title>
+        </head>
+    <body>
+    </head>
+<script>
+var pilihan =  prompt ("harga obatan (1-5):");
+var obat="";
+switch (obat) {
+  case '1':
+    obat = "paracetamol 500mg " ;
+    break;
+  case '2':
+    obat = " Ibu Profen" ;
+    break;
+  case '3':
+    obat = "Aspirin" ;
+    break;
+  case '4':
+    obat = "Met Actoplus" ;
+    break;
+  case '5':
+    obat = "Sirup diare" ;
+    break;
+  default:
+    obat=" ";
+  }
+ if (obat == ""){
+     document.write("pilihan obat anda tidak tepat")
+ }else {
+     document.write(" obat yang anda pilih adalah" + obat +"</h2>");
+ }
+</script>
+
+</body>
+</html>

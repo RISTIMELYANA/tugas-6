@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <title> project membuat ternary operator</title>
+    </head>
+
+</head>
+<body>
+    <script>
+        let age = prompt ("dosis usia:",0);
+
+        document.write(age > 18 ? "kamu bisa meminum obat ini":"dosis obat yang sangat tinggi, tidak disarankan");
+    </script>
+</body>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <title> project membuat if-else</title>
+    </head>
+
+</head>
+<body>
+    <script>
+        //if -else
+    var obat =prompt("dosis obatan:",0);
+    var greeting="";
+   if (obat < 1)  greeting ="paracetamol";
+ else if (obat > 3 )  greeting = "Aspirin";
+  else if (obat > 3)  greeting = "Met Actoplus";
+ else greeting = "3";
+
+ document.write("greeting dosis anda: "+greeting);
+ // switch case
+ var pilihan =  prompt ("harga obatan (1-5):");
+var obat="";
+switch (obat) {
+  case '1':
+    obat = "paracetamol 500mg " ;
+    break;
+  case '2':
+    obat = " Ibu Profen" ;
+    break;
+  case '3':
+    obat = "Aspirin" ;
+    break;
+  case '4':
+    obat = "Met Actoplus" ;
+    break;
+  case '5':
+    obat = "Sirup diare" ;
+    break;
+  default:
+    obat=" ";
+  }
+ if (obat == ""){
+     document.write("pilihan obat anda tidak tepat")
+ }else {
+     document.write(" obat yang anda pilih adalah" + obat +"</h2>");
+ }
+ //ternary
+ let age = prompt ("dosis usia:",0);
+
+        document.write(age > 18 ? "kamu bisa meminum obat ini":"dosis obat yang sangat tinggi, tidak disarankan");
+//for loop
+const name = ["Risti Melyana", "Melyana", "Resti", "Mely", "yana", "Amel"];
+
+let text = "";
+for (let i = 0; i < name.length; i++) {
+  text += name[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+//for in loop
+const Animals = {fname:"Zebra, Kelinci, Kucing"}; 
+
+let txt = "";
+for (let x in Animals) {
+  txt += Animals[x] + " ";
+}
+
+document.getElementById("demo").innerHTML = txt;
+// for of loop
+const Animals = ["Zebra", "Kelinci", "Kucing"];
+
+let text = "";
+for (let x of Animals) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+//do while loop
+var total= prompt(" ada beberapa perulangan :");
+        var hasil = 1;
+        while (hasil <= total){
+            document.write ("<p>perulangan ke-" + hasil + "</p>");
+            hasil ++;
+        }
+//while do loop
+var total= prompt(" ada beberapa perulangan :");
+        var hasil = 1;
+        do {
+            document.write ("<p>perulangan ke-" + hasil + "</p>");
+            hasil ++;
+        }while (total <= hasil);
+//try catch
+try{
+                var Riau ="Pekanbaru";
+                document.write(Riau);
+
+                if(Riau == " ")
+                throw "variabel Riau pekabanru"
+            }catch (error){
+                alert(error);
+            } finally {
+                document.write("<p> tampilan </p>")
+            }
+</script>
+
+</script>
+</body>
+</html>
